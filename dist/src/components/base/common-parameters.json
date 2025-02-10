@@ -1,0 +1,30 @@
+{
+    "collectionName": "components_base_common_parameters",
+    "info": {
+        "displayName": "common_parameters"
+    },
+    "options": {},
+    "attributes": {
+        "material": {
+            "type": "string",
+            "required": true
+        },
+        "coating": {
+            "type": "string"
+        },
+        "total_length": {
+            "type": "decimal",
+            "required": true
+        },
+        "resource_seconds": {
+            "type": "integer",
+            "required": true
+        },
+        "max_speed_rpm": {
+            "type": "integer"
+        },
+        "mounting_type": {
+            "type": "string"
+        }
+    }
+}

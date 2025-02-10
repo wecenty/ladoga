@@ -1,0 +1,55 @@
+{
+    "kind": "collectionType",
+    "collectionName": "catalogs",
+    "info": {
+        "singularName": "catalog",
+        "pluralName": "catalogs",
+        "displayName": "Каталог",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "maxLength": 20,
+            "minLength": 5
+        },
+        "children": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::catalog.catalog",
+            "mappedBy": "parent"
+        },
+        "parent": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::catalog.catalog",
+            "mappedBy": "children"
+        },
+        "creator": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "plugin::users-permissions.user",
+            "inversedBy": "catalog_starter"
+        },
+        "date_delete": {
+            "type": "date"
+        },
+        "who_delete": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "plugin::users-permissions.user",
+            "inversedBy": "catalog_deleter"
+        },
+        "projects": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::project.project",
+            "mappedBy": "catalog"
+        }
+    }
+}

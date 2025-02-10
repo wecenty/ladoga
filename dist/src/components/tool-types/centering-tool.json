@@ -1,0 +1,34 @@
+{
+    "collectionName": "components_tool_types_centering_tools",
+    "info": {
+        "displayName": "centering_tool",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "common": {
+            "type": "component",
+            "repeatable": false,
+            "component": "base.common-parameters",
+            "required": true
+        },
+        "type": {
+            "type": "string",
+            "required": true
+        },
+        "taper": {
+            "type": "string",
+            "required": true
+        },
+        "mandrel_diameter": {
+            "type": "decimal"
+        },
+        "mandrel_length": {
+            "type": "decimal"
+        },
+        "max_load": {
+            "type": "decimal",
+            "required": true
+        }
+    }
+}

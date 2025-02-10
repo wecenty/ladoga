@@ -1,0 +1,69 @@
+{
+    "kind": "collectionType",
+    "collectionName": "projects",
+    "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "Проект",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "maxLength": 20,
+            "minLength": 5
+        },
+        "version": {
+            "type": "integer",
+            "default": 0
+        },
+        "quantity": {
+            "type": "integer",
+            "default": 1
+        },
+        "catalog": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::catalog.catalog",
+            "inversedBy": "projects"
+        },
+        "children": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::project.project",
+            "mappedBy": "parent"
+        },
+        "parent": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::project.project",
+            "inversedBy": "children"
+        },
+        "creator": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "plugin::users-permissions.user",
+            "inversedBy": "project_starter"
+        },
+        "date_delete": {
+            "type": "date"
+        },
+        "who_delete": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "plugin::users-permissions.user",
+            "inversedBy": "project_deleter"
+        },
+        "tools": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::project-tool.project-tool",
+            "mappedBy": "project"
+        }
+    }
+}

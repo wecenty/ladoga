@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_tool_types_threading_tools",
+  "info": {
+    "displayName": "threading_tool",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "common": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base.common-parameters",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Руной",
+        "Станочный",
+        "Комбинированный"
+      ],
+      "required": true
+    },
+    "thread_pitch": {
+      "type": "decimal",
+      "required": true
+    },
+    "thread_diameter": {
+      "type": "decimal",
+      "required": true
+    },
+    "cutting_length": {
+      "type": "decimal",
+      "required": true
+    },
+    "shank_type": {
+      "type": "enumeration",
+      "enum": [
+        "Квадратный",
+        "Цилиндрический"
+      ],
+      "required": true
+    }
+  }
+}

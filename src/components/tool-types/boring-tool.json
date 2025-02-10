@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_tool_types_boring_tools",
+  "info": {
+    "displayName": "boring_tool",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "common": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base.common-parameters",
+      "required": true
+    },
+    "cutting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base.cutting-part",
+      "required": true
+    },
+    "cutting_edges": {
+      "type": "integer",
+      "required": true
+    },
+    "shank_type": {
+      "type": "enumeration",
+      "enum": [
+        "Конические",
+        "Торцевые инструменты"
+      ],
+      "required": true
+    }
+  }
+}

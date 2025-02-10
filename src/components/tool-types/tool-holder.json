@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_tool_types_tool_holders",
+  "info": {
+    "displayName": "tool_holder",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "length": {
+      "type": "decimal",
+      "required": true
+    },
+    "section_height": {
+      "type": "decimal",
+      "required": true
+    },
+    "section_width": {
+      "type": "decimal",
+      "required": true
+    },
+    "mounting_type": {
+      "type": "string",
+      "required": true
+    },
+    "material": {
+      "type": "string",
+      "required": true
+    },
+    "compatible_plates": {
+      "type": "json"
+    },
+    "resource_seconds": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

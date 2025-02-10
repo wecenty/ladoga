@@ -1,0 +1,38 @@
+{
+    "collectionName": "components_tool_types_drilling_tools",
+    "info": {
+        "displayName": "drilling_tool",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "common": {
+            "type": "component",
+            "repeatable": false,
+            "component": "base.common-parameters",
+            "required": true
+        },
+        "cutting": {
+            "type": "component",
+            "repeatable": false,
+            "component": "base.cutting-part",
+            "required": true
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "Спиральное",
+                "Ступенчатое",
+                "Корончатое",
+                "Коническое",
+                "Перовое",
+                "Центровочное"
+            ],
+            "required": true
+        },
+        "sharpening_angle": {
+            "type": "decimal",
+            "required": true
+        }
+    }
+}

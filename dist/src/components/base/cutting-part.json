@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_base_cutting_parts",
+    "info": {
+        "displayName": "cutting_part"
+    },
+    "options": {},
+    "attributes": {
+        "cutting_diameter": {
+            "type": "decimal"
+        },
+        "cutting_length": {
+            "type": "decimal"
+        },
+        "shank_diameter": {
+            "type": "decimal"
+        }
+    }
+}

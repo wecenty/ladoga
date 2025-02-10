@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_tool_types_cutting_plates",
+  "info": {
+    "displayName": "cutting_plate",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "material": {
+      "type": "string",
+      "required": true
+    },
+    "coating": {
+      "type": "string"
+    },
+    "edge_angle": {
+      "type": "decimal",
+      "required": true
+    },
+    "nose_radius": {
+      "type": "decimal",
+      "required": true
+    },
+    "length": {
+      "type": "decimal",
+      "required": true
+    },
+    "width": {
+      "type": "decimal",
+      "required": true
+    },
+    "thickness": {
+      "type": "decimal",
+      "required": true
+    },
+    "mounting_type": {
+      "type": "string",
+      "required": true
+    },
+    "resource_seconds": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

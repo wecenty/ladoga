@@ -1,0 +1,45 @@
+{
+    "collectionName": "components_tool_types_milling_tools",
+    "info": {
+        "displayName": "milling_tool",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "common": {
+            "type": "component",
+            "repeatable": false,
+            "component": "base.common-parameters",
+            "required": true
+        },
+        "cutting": {
+            "type": "component",
+            "repeatable": false,
+            "component": "base.cutting-part",
+            "required": true
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "Дисковая",
+                "Торцевая",
+                "Цилиндрическая",
+                "Угловая",
+                "Концевая",
+                "Фасонная",
+                "Червячная",
+                "Кольцевая"
+            ]
+        },
+        "landing_hole": {
+            "type": "decimal"
+        },
+        "teeth_count": {
+            "type": "integer"
+        },
+        "teeth_angle": {
+            "type": "decimal",
+            "required": true
+        }
+    }
+}

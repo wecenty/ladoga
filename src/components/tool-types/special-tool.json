@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_tool_types_special_tools",
+  "info": {
+    "displayName": "special_tool",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "common": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base.common-parameters",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "working_part_dimensions": {
+      "type": "json"
+    },
+    "shank_dimensions": {
+      "type": "json"
+    },
+    "special_features": {
+      "type": "json"
+    }
+  }
+}

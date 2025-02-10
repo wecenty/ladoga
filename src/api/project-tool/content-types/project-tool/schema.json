@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_tools",
+  "info": {
+    "singularName": "project-tool",
+    "pluralName": "project-tools",
+    "displayName": "Инструмент проекта"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "tools"
+    },
+    "tool": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tool.tool",
+      "inversedBy": "project_tools"
+    },
+    "application_time": {
+      "type": "decimal",
+      "required": true
+    },
+    "quantity": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

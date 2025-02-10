@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_tool_types_turning_tools",
+  "info": {
+    "displayName": "turning_tool",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "common": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base.common-parameters",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Проходной",
+        "Отрезной",
+        "Расточной",
+        "Фасонный",
+        "Резьбовой"
+      ],
+      "required": true
+    },
+    "plate": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tool-types.cutting-plate",
+      "required": true
+    },
+    "holder": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tool-types.tool-holder",
+      "required": true
+    },
+    "feed_direction": {
+      "type": "enumeration",
+      "enum": [
+        "Правый",
+        "Левый",
+        "Нейтральный"
+      ],
+      "required": true
+    }
+  }
+}
